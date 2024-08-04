@@ -1,62 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BRINSLY's_portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <br>
-    <h1>Welcome To My Portfolio</h1>
-</header>
-<nav>Home
-    <br>Projects
-    <br>Certificates
-</nav>
+
 <body>
-    <img src="images/picture1.jpg " width="200">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
-    </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
-            <br>My first task was to create a github account, create a github repository and understand how it all works. Task done on the 30th of July 2024</br>
+
+    <header>
+        <div class="container">
+            <div class="title">
+                <h1>Welcome To My Portfolio</h1>
+            </div>
+
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        <br> My next task at FluxSarl was to build a personal portfolio website. Task still in progress</br>
-    </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-           <br>
-           <br>
-            <input type="email" placeholder="Your Email" required>
-           <br><br>
-            <textarea placeholder="Your Message" required></textarea>
-           <br>
-        
-            <button type="submit">Send Message</button><br><br>
-        </form>
-    </section>
-</body>
-<footer>
-    <img src="images/picture2.jpg " width="200">
-    <p>Name</p>
-    <p>CHE BRINSLY NGWANG</p>
-    <p>Contact</p>
-    <p>+237,678748532</p>
-    <p>Address</p>
-    <p>adhddredd@mail.com</p>
-</footer>
+    </header>
+    <div class="container">
+        <nav>
+            <a href=""> Home</a>
+            <a href="">Projects</a>
+            <a href="">Certificates</a>
+        </nav>
 
-</html>
+        <div class="pic1">
+            <img src="images/picture1.jpg " width="200">
+        </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+                <br>My first task was to create a github account, create a github repository and understand how it all
+                works. Task done on the 30th of July 2024<br>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+                <br> My next task at FluxSarl was to build a personal portfolio website. Task still in progress<br>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required="">
+                <br>
+                <br>
+                <input type="email" placeholder="Your Email" required="">
+                <br><br>
+                <textarea placeholder="Your Message" required=""></textarea>
+                <br>
+
+                <button type="submit">Send Message</button><br><br>
+            </form>
+        </section>
+
+        <footer>
+            <img src="images/picture2.jpg " width="200">
+            <p>Name</p>
+            <p>CHE BRINSLY NGWANG</p>
+            <p>Contact</p>
+            <p>+237,678748532</p>
+            <p>Address</p>
+            <p>adhddredd@mail.com</p>
+        </footer>
+        </div>
+    
+
+
+
+    
+    
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

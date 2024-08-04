@@ -1,0 +1,42 @@
+body{
+    background-image:url('images/picture3.jpg');
+  
+}
+header{
+    background-color:gray
+    
+}
+.title h1{
+    color: rgb(71, 64, 13);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+ nav a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 50%;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-direction: column;
+    border: solid;
+}
